@@ -9,6 +9,9 @@ if (hours < 0 || hours > 23 || minutes < 0 || minutes > 59) {
     return;
 }
 function convert(num) {
+    if (num == 0) {
+        return "N";
+    }
     var res = "";
     var i = arabNum.length - 1;
     while(num > 0) {
